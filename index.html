@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/655ce26696.js" crossorigin="anonymous"></script>
+</head>
+</html>
+<script>
+    function replayGif(container) {
+        const gif = container.querySelector('.project-img-animated');
+        const src = gif.src;
+        gif.src = '';
+        gif.src = src;
+    }
+</script>
+<body>
+<header>
+    <nav id="navbar">
+        <div class="logo">Gisela <span>Benito</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#work">Work</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home" class="hero">
+        <div class="home-content">
+            <div class="hero-text">
+                <h1>HI! I’M GISELA</h1>
+                <h2>PROGRAMMER & GAME DEVELOPER</h2>
+                <p>
+                    I am a <strong>passionate programmer and game developer</strong> with a strong background in <strong>C++ and C#</strong>.
+                </p>
+
+                <p>
+                    I have experience working with <strong>Unity</strong> and <strong>Unreal Engine</strong>, and I am skilled in designing and implementing <strong>gameplay systems, mechanics, and tools</strong>.
+                </p>
+
+                <p>
+                    I am a <strong>creative problem solver</strong> who enjoys collaborating with <strong>cross-functional teams</strong> to bring <strong>innovative ideas</strong> to life.
+                </p>
+
+                <p>
+                    With a solid understanding of <strong>game development principles</strong> and a commitment to <strong>clean code practices</strong>, I am dedicated to creating <strong>engaging and immersive gaming experiences</strong>.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/gisela-benito-izquierdo-32b104276" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Gise-9045" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://reiven-9045.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+                </div>
+                <a href="mailto:giselabenitoi@gmail.com" class="btn">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                    <img src="Assets/profile_image.JPG" alt="profile image">
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="experience">
+        <h2 class="section-title">My Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Oct 2024 - Feb 2026</span>
+                    <h3>Virtual Reality Lab Technician</h3>
+                    <h4>ENTI - Escola de Noves Tecnologies, Barcelona</h4>
+                    <p>
+                        Responsible for <strong>inventory management, maintenance, and equipment lending</strong>, as well as <strong>reservation system management</strong> and <strong>peripheral documentation</strong>.
+                    </p>
+
+                    <p>
+                        Involved in <strong>design and development of VR experiences</strong> and <strong>gameplay session broadcasting</strong> using the <strong>Virtuix Omni platform</strong>.
+                    </p>
+
+                    <p>
+                        Conducted <strong>demonstrations and hardware/software testing</strong>, while collaborating in <strong>teamwork and creative problem-solving</strong> environments.
+                    </p>
+                    <ul class="skills">
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Kotlin</li>
+                        <li>Experience Design</li>
+                        <li>Technical Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Professional Projects</h2>
+        <h3>GAME PROJECTS</h3>
+        <p>A selection of my projects focused on game development, gameplay systems, and interactive experiences.</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/littlthings_game.png" alt="Preview" class="project-img-static">   
+                    <img src="Assets/LT_1.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Little Things</h3>
+                    <p>Help Whis find his partner Ky after getting lost in the Dungeon! Solve  puzzles, jump through platforms, use the power of colors and more to  traverse multiple challenges!</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://reiven-9045.itch.io/little-things" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/FA_2.png" alt="Preview" class="project-img-static">   
+                    <img src="Assets/FA_3.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Fragments of the abyss</h3>
+                    <p>Immerse yourself in a cursed mansion where every shadow conceals an entity poised to hunt you. Possessed mannequins whisper behind your steps, and angelic statues spring to life to corner you.</p>
+                    <div class="project-tech">
+                        <span>Unreal Engine 5</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://reiven-9045.itch.io/fragment-of-the-abbys" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                 <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/mg-2.png" alt="Preview" class="project-img-static">   
+                    <img src="Assets/MG_1.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Magichi</h3>
+                    <p>Magichi is a casual mobile game in which you complete your master's orders to level up and become as skilled as he is.</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://juditespigol.itch.io/magichi" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                        <a href= "https://github.com/Gise-9045/3CDI_Magichi" target="_blank"><i class="fab fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                 <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/superpang.png" alt="Preview" class="project-img-static">   
+                    <img src="Assets/SP_1.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Super Pang</h3>
+                    <p>Remake of Super Pang Phaser Edition. Super Pang is a game that was originally an arcade game and was later released for Super Nintendo with levels that are completely different from the originals.</p>
+                    <div class="project-tech">
+                        <span>Phaser</span>
+                        <span>HTML</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://github.com/juditEspigol/CDI-3-SuperPang" target="_blank"><i class="fab fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/1942_2.jpg" alt="Preview" class="project-img-static">   
+                    <img src="Assets/1942_1.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>1942</h3>
+                    <p>A classic 1942 remake focused on gameplay structure, built applying SOLID principles and clean code practices.</p>
+                    <div class="project-tech">
+                        <span>c++</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://github.com/Gise-9045/1942_Remake" target="_blank"><i class="fab fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/BC_2.png" alt="Preview" class="project-img-static">   
+                    <img src="Assets/BC_1.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Beach Cleaning Simulator</h3>
+                    <p>The beaches are covered in trash, and it's up to you to clean them up! Use your vacuum gun to collect waste and sort it into the correct recycling bins.</p>
+                    <div class="project-tech">
+                        <span>Unreal Engine 5</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "#" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                        <a href= "#" target="_blank"><i class="fab fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>D
+        <h3>DEVELOPER PROJECTS</h3>
+        <p>A collection of technical programming projects emphasizing clean architecture, scalability, and maintainability.</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/SM_2.JPG" alt="Preview" class="project-img-static">   
+                    <img src="Assets/SM_1.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Sonar festival project</h3>
+                    <p>Help Whis find his partner Ky after getting lost in the Dungeon! Solve  puzzles, jump through platforms, use the power of colors and more to  traverse multiple challenges!</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>C#</span>
+                        <span>Unity</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" onclick="replayGif(this)">
+                    <img src="Assets/P_1.png" alt="Preview" class="project-img-static">   
+                    <img src="Assets/P_2.gif" alt="Animation" class="project-img-animated">
+                </div>
+                <div class="project-info">
+                    <h3>Padel Motion capture project</h3>
+                    <p>Immerse yourself in a cursed mansion where every shadow conceals an entity poised to hunt you. Possessed mannequins whisper behind your steps, and angelic statues spring to life to corner you</p>
+                    <div class="project-tech">
+                        <span>Unreal Engine 5</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://github.com/LabVREnti/Rokoko_Prototype" target="_blank"><i class="fab fa-github"></i>Code<a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">   
+                    <img src="Assets/TC_1.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>TocaCiencia project</h3>
+                    <p>Immerse yourself in a cursed mansion where every shadow conceals an entity poised to hunt you. Possessed mannequins whisper behind your steps, and angelic statues spring to life to corner you</p>
+                    <div class="project-tech">
+                        <span>Unreal Engine 5</span>
+                        <span>Atlassian</span>
+                    </div>
+                    <div class="project-links">
+                        <a href= "https://github.com/LabVREnti/NFC_Toolkit" target="_blank"><i class="fab fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--     
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section> -->
+</main>
+
+<footer>
+    <div class="key-words"><p>Gameplay Programmer, Gameplay Programming, C++, C#, Unity, Unreal Engine, Visual Studio, .NET, Atlassian Jira, Confluence, (Bitbucket), Git, GitFlow, Pull Requests, Code Review, CI/CD, Agile/Scrum, Game Mechanics, Gameplay Systems, Game Loop, Event-driven Architecture, State Machines (FSM), AI Behaviors, English, B2 English Titulation, First, Behavior Trees, NavMesh/Pathfinding, Physics & Collision, Animation State Machines/IK, Input Systems, UI/HUD Integration, Save/Load Systems, Tools/Editor Scripting, Performance Optimization, Profiling, Debugging, Vector Math/Linear Algebra, Design Patterns (State/Observer/Command), Cross-platform Development, Cross-functional Collaboration</p></div>
+    <div class="footer-content">
+        <p>&copy; 2026 Gisela Benito - All rights reserved.</p>
+        <div class="social/link">
+            <a href="https://www.linkedin.com/in/gisela-benito-izquierdo-32b104276" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Gise-9045" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://reiven-9045.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
