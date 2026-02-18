@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Super Pang — Gisela Benito</title>
+  <script src="https://kit.fontawesome.com/655ce26696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../project.css" />
+</head>
+
+<body
+  data-project="super-pang"
+  style="
+    --accent: #ffcf4a;
+    --accent-soft: rgba(255, 207, 74, 0.18);
+    --bg-image: none;
+  "
+>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="../index.html" aria-label="Back to Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Gisela <strong>Benito</strong></span>
+      </a>
+      <nav class="topbar__nav">
+        <a class="pill" href="../index.html"><i class="fas fa-home"></i>Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Game Project</p>
+          <h1 class="title">SUPER PANG — PHASER REMAKE</h1>
+          <p class="subtitle">
+            A browser-based remake focused on arcade feel, collision-driven gameplay, and structured JavaScript architecture.
+          </p>
+
+          <div class="meta">
+            <div class="chips">
+              <span class="chip">Phaser</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">HTML</span>
+              <span class="chip">Gameplay Loop</span>
+            </div>
+
+            <div class="cta">
+              <a class="btn" href="https://github.com/juditEspigol/CDI-3-SuperPang" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>Code
+              </a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-link"></i>Playable (optional)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media card">
+          <div class="ratio ratio--16x9">
+            <!-- TODO: hero image -->
+            <div class="placeholder">
+              <i class="fas fa-image"></i><span>Gameplay Screenshot / Hero Image</span>
+            </div>
+          </div>
+          <p class="caption">Arcade screen composition and ball-splitting mechanic overview.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="block card">
+        <h2>Project Overview</h2>
+        <div class="two-col">
+          <div>
+            <h3>Context</h3>
+            <p>
+              Super Pang (Phaser Edition) is a web remake of the classic arcade title.
+              The project focuses on reproducing the feel of the original while maintaining clean, modular JavaScript structure.
+            </p>
+          </div>
+          <div>
+            <h3>Goals</h3>
+            <ul>
+              <li>Recreate core mechanics with reliable collisions.</li>
+              <li>Maintain responsive input and consistent timing in browser.</li>
+              <li>Use a modular approach for scalability and readability.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Gameplay & Design Focus</h2>
+        <div class="two-col">
+          <div>
+            <h3>Core Mechanics</h3>
+            <ul>
+              <li>Ball splitting and increasing complexity.</li>
+              <li>Positioning and risk management under pressure.</li>
+              <li>Arcade pacing and difficulty escalation.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Design Pillars</h3>
+            <ul>
+              <li>Consistency: predictable physics and collisions.</li>
+              <li>Readability: clear hitboxes and player feedback.</li>
+              <li>Performance: avoid spikes with pooling and clean updates.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Gameplay Screenshot Placeholder</span></div>
+            </div>
+            <p class="caption">Ball states and collision readability.</p>
+          </div>
+
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Mechanic Screenshot Placeholder</span></div>
+            </div>
+            <p class="caption">Split mechanic progression (multi-ball complexity).</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Technical Implementation</h2>
+        <div class="two-col">
+          <div>
+            <h3>Architecture</h3>
+            <ul>
+              <li>Modular JS structure (entities, systems, states).</li>
+              <li>Phaser physics integration for collisions and movement.</li>
+              <li>Clean separation of game states (menu/gameplay/end).</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Key Systems</h3>
+            <ul>
+              <li>Ball splitting logic and behavior variants.</li>
+              <li>Collision responses and player damage rules.</li>
+              <li>Pooling/cleanup strategies to keep performance stable.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Highlight:</strong> The gameplay was tuned to feel responsive and fair while keeping browser performance stable
+          through clean update patterns and object reuse.
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Code / Debug Placeholder</span></div>
+            </div>
+            <p class="caption">Code organization and gameplay state flow (optional screenshot).</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Recognition & Industry Exposure</h2>
+        <ul class="badges">
+          <li class="badge"><i class="fas fa-gamepad"></i> Classic remake focused on gameplay feel</li>
+          <li class="badge"><i class="fas fa-globe"></i> Web / browser constraints and optimization</li>
+        </ul>
+      </article>
+
+      <article class="block card">
+        <h2>My Role & Responsibilities</h2>
+        <div class="role">
+          <div class="role__left">
+            <h3>Role</h3>
+            <p class="role__title">Gameplay Programmer</p>
+
+            <h3>Impact</h3>
+            <ul>
+              <li>Implemented core mechanics and collision rules.</li>
+              <li>Structured logic for easy iteration and scaling.</li>
+              <li>Optimized runtime behavior for browser performance.</li>
+            </ul>
+          </div>
+
+          <div class="role__right">
+            <h3>What I did</h3>
+            <ul class="checklist">
+              <li><i class="fas fa-check"></i> Built ball splitting logic and behaviors</li>
+              <li><i class="fas fa-check"></i> Implemented collision handling and rules</li>
+              <li><i class="fas fa-check"></i> Structured game states and scene flow</li>
+              <li><i class="fas fa-check"></i> Optimized for stable browser performance</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Gisela Benito — Super Pang</p>
+      <p class="footer__links"><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

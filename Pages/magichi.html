@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Magichi — Gisela Benito</title>
+  <script src="https://kit.fontawesome.com/655ce26696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../project.css" />
+</head>
+
+<body
+  data-project="magichi"
+  style="
+    --accent: #ff6aa6;
+    --accent-soft: rgba(255, 106, 166, 0.22);
+    --bg-image: none;
+  "
+>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="../index.html" aria-label="Back to Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Gisela <strong>Benito</strong></span>
+      </a>
+
+      <nav class="topbar__nav">
+        <a class="pill" href="../index.html"><i class="fas fa-home"></i>Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Game Project</p>
+          <h1 class="title">MAGICHI</h1>
+          <p class="subtitle">
+            A casual mobile game where you complete your master’s orders to level up and become as skilled as he is.
+          </p>
+
+          <div class="meta">
+            <div class="chips">
+              <span class="chip">Unity</span>
+              <span class="chip">C#</span>
+              <span class="chip">Mobile</span>
+              <span class="chip">Gameplay Loop</span>
+              <span class="chip">UI / Feedback</span>
+            </div>
+
+            <div class="cta">
+              <a class="btn" href="https://juditespigol.itch.io/magichi" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-link"></i>Demo
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/Gise-9045/3CDI_Magichi" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media card">
+          <div class="ratio ratio--16x9">
+            <!-- TODO: embed video or hero image -->
+            <div class="placeholder">
+              <i class="fas fa-play"></i><span>Gameplay Video / Hero Image</span>
+            </div>
+          </div>
+          <p class="caption">Show the main loop: tasks → reward → level up → new orders.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content">
+      <!-- Overview -->
+      <article class="block card">
+        <h2>Project Overview</h2>
+        <div class="two-col">
+          <div>
+            <h3>Context</h3>
+            <p>
+              Magichi is a casual mobile game focused on short sessions, clear objectives, and satisfying progression.
+              The player completes “orders” given by a master, earning rewards to level up and unlock new challenges.
+            </p>
+          </div>
+          <div>
+            <h3>Goals</h3>
+            <ul>
+              <li>Build a clear and addictive short-session gameplay loop.</li>
+              <li>Deliver responsive mobile-friendly controls and UI.</li>
+              <li>Support scalable tasks and progression without rewriting systems.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Gameplay & Design -->
+      <article class="block card">
+        <h2>Gameplay & Design Focus</h2>
+        <div class="two-col">
+          <div>
+            <h3>Core Loop</h3>
+            <ul>
+              <li>Receive an order (objective).</li>
+              <li>Perform actions to complete it (mini-task).</li>
+              <li>Get rewards and level up.</li>
+              <li>Unlock new orders and repeat.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Design Pillars</h3>
+            <ul>
+              <li>Clarity: the player always knows what to do next.</li>
+              <li>Feedback: actions have instant readable response.</li>
+              <li>Progression: rewards drive motivation and retention.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>UI / Task Screen Placeholder</span></div>
+            </div>
+            <p class="caption">Task presentation and clear objectives on mobile.</p>
+          </div>
+
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Gameplay Screenshot Placeholder</span></div>
+            </div>
+            <p class="caption">Core action moment + feedback (VFX/SFX/UI).</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Technical -->
+      <article class="block card">
+        <h2>Technical Implementation</h2>
+        <div class="two-col">
+          <div>
+            <h3>Architecture</h3>
+            <ul>
+              <li>Task system designed to be data-driven and extendable.</li>
+              <li>UI flow built around clean state transitions.</li>
+              <li>Reusable feedback hooks for consistent player response.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Key Systems</h3>
+            <ul>
+              <li>Order/task manager (assign, track, resolve).</li>
+              <li>Progression and reward logic (leveling and unlocks).</li>
+              <li>UI screens and navigation (mobile-first).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Highlight:</strong> The order system was structured to allow quick iteration and content expansion,
+          making it easy to add new objectives, rewards, and difficulty scaling.
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Unity Inspector / Code Placeholder</span></div>
+            </div>
+            <p class="caption">Order/task configuration, progression variables, and UI flow overview.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Recognition -->
+      <article class="block card">
+        <h2>Recognition & Industry Exposure</h2>
+        <ul class="badges">
+          <li class="badge"><i class="fas fa-mobile-alt"></i> Mobile casual design focus</li>
+          <li class="badge"><i class="fas fa-sync-alt"></i> Strong session loop + progression</li>
+        </ul>
+      </article>
+
+      <!-- Role -->
+      <article class="block card">
+        <h2>My Role & Responsibilities</h2>
+
+        <div class="role">
+          <div class="role__left">
+            <h3>Role</h3>
+            <p class="role__title">Gameplay Programmer</p>
+
+            <h3>Impact</h3>
+            <ul>
+              <li>Implemented task/progression systems supporting scalable content.</li>
+              <li>Improved UX clarity via UI flow and feedback consistency.</li>
+              <li>Owned features from implementation to tuning and polish.</li>
+            </ul>
+          </div>
+
+          <div class="role__right">
+            <h3>What I did</h3>
+            <ul class="checklist">
+              <li><i class="fas fa-check"></i> Built the order/task system and tracking logic</li>
+              <li><i class="fas fa-check"></i> Implemented progression and rewards</li>
+              <li><i class="fas fa-check"></i> Integrated UI screens and navigation</li>
+              <li><i class="fas fa-check"></i> Tuned feedback and session pacing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Work / Playtest Placeholder</span></div>
+            </div>
+            <p class="caption">Playtesting / UI iteration / balancing notes (optional).</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Gisela Benito — Magichi</p>
+      <p class="footer__links"><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -411,6 +411,10 @@ footer {
     font-size: 0.8rem;
     margin-bottom: 1rem;
 }
+
+.project-card[data-href]{
+  cursor: pointer;
+}
 @media (max-width: 430px) {
     header{
         position:static ;

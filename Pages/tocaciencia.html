@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TocaCiencia Project — Gisela Benito</title>
+  <script src="https://kit.fontawesome.com/655ce26696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../project.css" />
+</head>
+
+<body
+  data-project="tocaciencia"
+  style="
+    --accent: #6c63ff;
+    --accent-soft: rgba(108, 99, 255, 0.22);
+    --bg-image: none;
+  "
+>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="../index.html" aria-label="Back to Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Gisela <strong>Benito</strong></span>
+      </a>
+      <nav class="topbar__nav">
+        <a class="pill" href="../index.html"><i class="fas fa-home"></i>Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Developer Project</p>
+          <h1 class="title">TOCACIENCIA</h1>
+          <p class="subtitle">
+            An accessible educational kit using tactile 3D printed models + NFC interaction for inclusive STEAM learning.
+          </p>
+
+          <div class="meta">
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">C#</span>
+              <span class="chip">Unity</span>
+              <span class="chip">NFC</span>
+              <span class="chip">Inclusive Design</span>
+            </div>
+
+            <div class="cta">
+              <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>Repository (optional)
+              </a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-link"></i>Docs / Demo (optional)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media card">
+          <div class="ratio ratio--16x9">
+            <!-- TODO: image/video -->
+            <div class="placeholder">
+              <i class="fas fa-image"></i><span>Kit / Hardware / App Screenshot</span>
+            </div>
+          </div>
+          <p class="caption">Tactile model + NFC workflow (physical + digital experience).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="block card">
+        <h2>Problem & Goals</h2>
+        <div class="two-col">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              Traditional STEAM content is often visually biased. TocaCiencia focuses on improving accessibility for visually impaired students through
+              tactile exploration combined with interactive digital content triggered by NFC.
+            </p>
+          </div>
+          <div>
+            <h3>Goals</h3>
+            <ul>
+              <li>Create a tactile-to-digital learning flow using NFC triggers.</li>
+              <li>Support curriculum-aligned content with scalable configuration.</li>
+              <li>Ensure a robust and simple setup for educators and students.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>System Overview</h2>
+        <div class="two-col">
+          <div>
+            <h3>Key Features</h3>
+            <ul>
+              <li>Tactile 3D printed models for macro–micro exploration.</li>
+              <li>NFC-based identification to trigger content in the app.</li>
+              <li>Accessible UI and guided learning interactions.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Pipeline / Flow</h3>
+            <ul>
+              <li>Scan NFC tag → identify model/content</li>
+              <li>Load lesson module → present guided interaction</li>
+              <li>Track progress / provide feedback</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Architecture Diagram Placeholder</span></div>
+            </div>
+            <p class="caption">Modules: NFC layer → content mapping → lesson presentation.</p>
+          </div>
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>UI / Lesson Screen Placeholder</span></div>
+            </div>
+            <p class="caption">Lesson UI / accessibility-focused layout.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Technical Implementation</h2>
+        <div class="two-col">
+          <div>
+            <h3>Architecture</h3>
+            <ul>
+              <li>Data-driven content mapping (NFC ID → lesson module).</li>
+              <li>Decoupled NFC integration from presentation layer.</li>
+              <li>Reusable lesson components for scalability.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Reliability & Performance</h3>
+            <ul>
+              <li>Error handling for missing/invalid NFC reads.</li>
+              <li>Clear fallback UX when content is unavailable.</li>
+              <li>Simple configuration for educators (low setup friction).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Highlight:</strong> The NFC-to-content mapping was designed to be extensible, enabling new models and lessons
+          to be added without changing the app’s core logic.
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Debug / Logging Placeholder</span></div>
+            </div>
+            <p class="caption">Debug workflow: NFC read events, content resolution, error states.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>My Role & Responsibilities</h2>
+        <div class="role">
+          <div class="role__left">
+            <h3>Role</h3>
+            <p class="role__title">Developer / Systems Programmer</p>
+
+            <h3>Impact</h3>
+            <ul>
+              <li>Built scalable NFC-driven architecture for educational content.</li>
+              <li>Improved accessibility-oriented interaction flow and clarity.</li>
+              <li>Ensured system robustness and maintainable expansion.</li>
+            </ul>
+          </div>
+
+          <div class="role__right">
+            <h3>What I did</h3>
+            <ul class="checklist">
+              <li><i class="fas fa-check"></i> Designed the NFC → content mapping workflow</li>
+              <li><i class="fas fa-check"></i> Implemented core integration and error handling</li>
+              <li><i class="fas fa-check"></i> Supported lesson UI flow and interaction logic</li>
+              <li><i class="fas fa-check"></i> Added debugging utilities and iteration support</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Gisela Benito — TocaCiencia</p>
+      <p class="footer__links"><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

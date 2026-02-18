@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Padel Motion Capture Project — Gisela Benito</title>
+  <script src="https://kit.fontawesome.com/655ce26696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../project.css" />
+</head>
+
+<body
+  data-project="padel"
+  style="
+    --accent: #00d2ff;
+    --accent-soft: rgba(0, 210, 255, 0.18);
+    --bg-image: none;
+  "
+>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="../index.html" aria-label="Back to Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Gisela <strong>Benito</strong></span>
+      </a>
+      <nav class="topbar__nav">
+        <a class="pill" href="../index.html"><i class="fas fa-home"></i>Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Developer Project</p>
+          <h1 class="title">PADEL MOTION CAPTURE</h1>
+          <p class="subtitle">
+            Sports training prototype using Rokoko MoCap to analyze movements and compare them with professional athletes.
+          </p>
+
+          <div class="meta">
+            <div class="chips">
+              <span class="chip">Unreal Engine 5</span>
+              <span class="chip">Rokoko</span>
+              <span class="chip">Animation</span>
+              <span class="chip">Data Comparison</span>
+              <span class="chip">Visualization</span>
+            </div>
+
+            <div class="cta">
+              <a class="btn" href="https://github.com/LabVREnti/Rokoko_Prototype" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>Repository
+              </a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-link"></i>Demo (optional)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media card">
+          <div class="ratio ratio--16x9">
+            <!-- TODO: image/video -->
+            <div class="placeholder">
+              <i class="fas fa-image"></i><span>MoCap Setup / Animation View</span>
+            </div>
+          </div>
+          <p class="caption">Rokoko pipeline and athlete comparison visualization.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="block card">
+        <h2>Problem & Goals</h2>
+        <div class="two-col">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              Coaches and athletes need clear ways to evaluate motion quality. This prototype explores how to capture movements with Rokoko,
+              animate a 3D model, and compare user motion against professional references for training feedback.
+            </p>
+          </div>
+          <div>
+            <h3>Goals</h3>
+            <ul>
+              <li>Integrate Rokoko motion data into Unreal in a stable pipeline.</li>
+              <li>Visualize and compare user motion against reference animations.</li>
+              <li>Support fast iteration on metrics, playback, and review UX.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>System Overview</h2>
+        <div class="two-col">
+          <div>
+            <h3>Key Features</h3>
+            <ul>
+              <li>MoCap capture → retargeting → animation playback.</li>
+              <li>Side-by-side comparison (user vs pro).</li>
+              <li>Review controls (scrub, slow motion, pose inspection).</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Pipeline / Flow</h3>
+            <ul>
+              <li>Capture session → import/stream data</li>
+              <li>Retarget to skeleton → save animation clip</li>
+              <li>Compare playback + metrics overlay</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Pipeline Diagram Placeholder</span></div>
+            </div>
+            <p class="caption">Rokoko data flow → retargeting → visualization in UE5.</p>
+          </div>
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Comparison View Placeholder</span></div>
+            </div>
+            <p class="caption">Comparison UI: user vs professional athlete motion.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Technical Implementation</h2>
+        <div class="two-col">
+          <div>
+            <h3>Architecture</h3>
+            <ul>
+              <li>Animation pipeline structured for repeatable capture sessions.</li>
+              <li>Retarget profiles to support different skeletons.</li>
+              <li>Separation between capture/import and analysis/visualization.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Reliability & Performance</h3>
+            <ul>
+              <li>Handling missing frames / noisy capture data.</li>
+              <li>Consistent playback timing and scrub accuracy.</li>
+              <li>Debug views to validate skeleton alignment and offsets.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Highlight:</strong> The prototype focuses on a dependable workflow: capture sessions produce consistent animations,
+          and comparison tools support fast iteration for training feedback.
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Debug / Retargeting Placeholder</span></div>
+            </div>
+            <p class="caption">Retargeting setup, debug skeleton alignment, or control UI.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>My Role & Responsibilities</h2>
+        <div class="role">
+          <div class="role__left">
+            <h3>Role</h3>
+            <p class="role__title">Developer / Technical Programmer</p>
+
+            <h3>Impact</h3>
+            <ul>
+              <li>Implemented a structured MoCap → UE5 integration pipeline.</li>
+              <li>Supported comparison workflows for training review.</li>
+              <li>Improved iteration by adding debug and validation tools.</li>
+            </ul>
+          </div>
+
+          <div class="role__right">
+            <h3>What I did</h3>
+            <ul class="checklist">
+              <li><i class="fas fa-check"></i> Integrated capture/import pipeline and retargeting</li>
+              <li><i class="fas fa-check"></i> Built comparison playback workflow</li>
+              <li><i class="fas fa-check"></i> Added debug tools for skeleton alignment</li>
+              <li><i class="fas fa-check"></i> Supported iteration on UI and review controls</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Gisela Benito — Padel Motion Capture</p>
+      <p class="footer__links"><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

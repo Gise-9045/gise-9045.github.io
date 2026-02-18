@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beach Cleaning Simulator — Gisela Benito</title>
+  <script src="https://kit.fontawesome.com/655ce26696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../project.css" />
+</head>
+
+<body
+  data-project="beach-cleaning"
+  style="
+    --accent: #d7b36a;
+    --accent-soft: rgba(215, 179, 106, 0.22);
+    --bg-image: none;
+  "
+>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="../index.html" aria-label="Back to Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Gisela <strong>Benito</strong></span>
+      </a>
+      <nav class="topbar__nav">
+        <a class="pill" href="../index.html"><i class="fas fa-home"></i>Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Game Project</p>
+          <h1 class="title">BEACH CLEANING SIMULATOR</h1>
+          <p class="subtitle">
+            A simulation prototype focused on interaction systems, satisfying feedback, and task-based progression.
+          </p>
+
+          <div class="meta">
+            <div class="chips">
+              <span class="chip">Unreal Engine 5</span>
+              <span class="chip">Gameplay Systems</span>
+              <span class="chip">Interaction</span>
+              <span class="chip">Prototyping</span>
+            </div>
+
+            <div class="cta">
+              <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-link"></i>Demo (optional)
+              </a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>Code (optional)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media card">
+          <div class="ratio ratio--16x9">
+            <!-- TODO: embed video or hero image -->
+            <div class="placeholder">
+              <i class="fas fa-play"></i><span>Gameplay Video / Hero Image</span>
+            </div>
+          </div>
+          <p class="caption">Clip showing vacuum collection + sorting feedback loop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="block card">
+        <h2>Project Overview</h2>
+        <div class="two-col">
+          <div>
+            <h3>Context</h3>
+            <p>
+              Beach Cleaning Simulator is a simulation prototype where the player cleans a beach using a vacuum tool,
+              then sorts collected waste into appropriate bins. It focuses on clear feedback, satisfying interactions, and progression tasks.
+            </p>
+          </div>
+          <div>
+            <h3>Goals</h3>
+            <ul>
+              <li>Create a satisfying collection loop with readable feedback.</li>
+              <li>Build an interaction system that scales across objects.</li>
+              <li>Track tasks/progression to support structured gameplay.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Gameplay & Design Focus</h2>
+        <div class="two-col">
+          <div>
+            <h3>Core Mechanics</h3>
+            <ul>
+              <li>Vacuum-based object collection.</li>
+              <li>Waste classification and sorting.</li>
+              <li>Task-driven objectives (clean zones / quotas).</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Design Pillars</h3>
+            <ul>
+              <li>Clarity: players always know what they collected.</li>
+              <li>Feedback: strong response to actions (SFX/VFX/UI).</li>
+              <li>Progression: goals push exploration and completion.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Gameplay Screenshot Placeholder</span></div>
+            </div>
+            <p class="caption">Vacuum mechanic and collection feedback.</p>
+          </div>
+
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Sorting UI / Bins Placeholder</span></div>
+            </div>
+            <p class="caption">Sorting system and classification clarity.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Technical Implementation</h2>
+        <div class="two-col">
+          <div>
+            <h3>Architecture</h3>
+            <ul>
+              <li>Reusable interaction components (trace + interface).</li>
+              <li>Object states (collectable / collected / sorted).</li>
+              <li>Data-driven categorization for waste types.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Key Systems</h3>
+            <ul>
+              <li>Vacuum tool logic (range, suction, target validation).</li>
+              <li>Inventory / collected items tracking.</li>
+              <li>Objective system (tasks, quotas, zone completion).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Highlight:</strong> The interaction framework was designed to be extendable, allowing new collectible types and
+          sorting rules without rewriting the core vacuum tool.
+        </div>
+
+        <div class="media-row">
+          <div class="media card">
+            <div class="ratio ratio--16x9">
+              <!-- TODO: image -->
+              <div class="placeholder"><span>Blueprint / System Overview Placeholder</span></div>
+            </div>
+            <p class="caption">System overview: interaction + progression tracking.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block card">
+        <h2>Recognition & Industry Exposure</h2>
+        <ul class="badges">
+          <li class="badge"><i class="fas fa-flask"></i> Prototype focused on system design & feedback loops</li>
+          <li class="badge"><i class="fas fa-cogs"></i> Reusable interaction architecture (scalable)</li>
+        </ul>
+      </article>
+
+      <article class="block card">
+        <h2>My Role & Responsibilities</h2>
+        <div class="role">
+          <div class="role__left">
+            <h3>Role</h3>
+            <p class="role__title">Gameplay Programmer</p>
+
+            <h3>Impact</h3>
+            <ul>
+              <li>Implemented the main interaction loop (collect → sort → progress).</li>
+              <li>Built a scalable interaction framework for multiple object types.</li>
+              <li>Improved player clarity through consistent feedback and rules.</li>
+            </ul>
+          </div>
+
+          <div class="role__right">
+            <h3>What I did</h3>
+            <ul class="checklist">
+              <li><i class="fas fa-check"></i> Implemented vacuum tool and target selection</li>
+              <li><i class="fas fa-check"></i> Built object categorization and sorting logic</li>
+              <li><i class="fas fa-check"></i> Added objective tracking and progression</li>
+              <li><i class="fas fa-check"></i> Tuned feedback (UI clarity, interaction response)</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Gisela Benito — Beach Cleaning Simulator</p>
+      <p class="footer__links"><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>
